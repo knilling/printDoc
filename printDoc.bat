@@ -1,0 +1,1 @@
+for /f "usebackq delims=|" %%f in (`dir /b ^| findstr /i /v printDoc`) do cscript printDoc.js "%cd%\%%f"
